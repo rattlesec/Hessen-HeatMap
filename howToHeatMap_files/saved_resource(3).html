@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- saved from url=(0098)http://localhost:8888/notebooks/Documents/GitHub/Hessen-HeatMap/Untitled.ipynb?kernel_name=python3 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+    
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="./leaflet.js"></script>
+    <script src="./jquery-1.12.4.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script src="./leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="./leaflet.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./font-awesome.min.css">
+    <link rel="stylesheet" href="./leaflet.awesome-markers.css">
+    <link rel="stylesheet" href="./leaflet.awesome.rotate.min.css">
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+            <style>
+                #map_283949ae7ead47b080711de914ba2b51 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="./leaflet_heat.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map leaflet-container leaflet-fade-anim leaflet-grab leaflet-touch-drag" id="map_283949ae7ead47b080711de914ba2b51" tabindex="0"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 17; transform: translate3d(-47px, -193px, 0px) scale(2);"></div><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(-47px, -193px, 0px) scale(1);"><img alt="" role="presentation" src="./171.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(246px, 250px, 0px); opacity: 1;"><img alt="" role="presentation" src="./171(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(502px, 250px, 0px); opacity: 1;"><img alt="" role="presentation" src="./172.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(246px, 506px, 0px); opacity: 1;"><img alt="" role="presentation" src="./172(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(502px, 506px, 0px); opacity: 1;"><img alt="" role="presentation" src="./170.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(246px, -6px, 0px); opacity: 1;"><img alt="" role="presentation" src="./170(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(502px, -6px, 0px); opacity: 1;"><img alt="" role="presentation" src="./171(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-10px, 250px, 0px); opacity: 1;"><img alt="" role="presentation" src="./171(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(758px, 250px, 0px); opacity: 1;"><img alt="" role="presentation" src="./172(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-10px, 506px, 0px); opacity: 1;"><img alt="" role="presentation" src="./172(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(758px, 506px, 0px); opacity: 1;"><img alt="" role="presentation" src="./173.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(246px, 762px, 0px); opacity: 1;"><img alt="" role="presentation" src="./173(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(502px, 762px, 0px); opacity: 1;"><img alt="" role="presentation" src="./170(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-10px, -6px, 0px); opacity: 1;"><img alt="" role="presentation" src="./170(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(758px, -6px, 0px); opacity: 1;"><img alt="" role="presentation" src="./173(2).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-10px, 762px, 0px); opacity: 1;"><img alt="" role="presentation" src="./173(3).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(758px, 762px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-overlay-pane"><canvas class="leaflet-heatmap-layer leaflet-layer leaflet-zoom-animated" width="967" height="580" style="transform-origin: 50% 50%; transform: translate3d(0px, 0px, 0px);"></canvas></div><div class="leaflet-pane leaflet-marker-pane"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(68380.5px, 44009px, 0px) scale(256);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="http://localhost:8888/notebooks/Documents/GitHub/Hessen-HeatMap/Untitled.ipynb?kernel_name=python3#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="http://localhost:8888/notebooks/Documents/GitHub/Hessen-HeatMap/Untitled.ipynb?kernel_name=python3#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com/" title="A JS library for interactive maps">Leaflet</a> | Data by © <a href="http://openstreetmap.org/">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.</div></div></div></div>
+        
+
+<script>    
+    
+            var map_283949ae7ead47b080711de914ba2b51 = L.map(
+                "map_283949ae7ead47b080711de914ba2b51",
+                {
+                    center: [50.6069118, 9.0117446],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e52fd415a94c4372931017dd1dd5c625 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_283949ae7ead47b080711de914ba2b51);
+        
+    
+            var heat_map_7584c39079d845609d06714ef24bbc95 = L.heatLayer(
+                [[50.12102, 8.92553], [50.05694, 8.25538], [50.114841, 8.68682], [50.13093, 8.76233], [50.10003, 8.59108]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            ).addTo(map_283949ae7ead47b080711de914ba2b51);
+        
+</script></body></html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- saved from url=(0098)http://localhost:8888/notebooks/Documents/GitHub/Hessen-HeatMap/Untitled.ipynb?kernel_name=python3 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+    
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="./leaflet.js"></script>
+    <script src="./jquery-1.12.4.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script src="./leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="./leaflet.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./font-awesome.min.css">
+    <link rel="stylesheet" href="./leaflet.awesome-markers.css">
+    <link rel="stylesheet" href="./leaflet.awesome.rotate.min.css">
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+            <style>
+                #map_e96c5e676854427fb22f6eac94a20d0d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map leaflet-container leaflet-fade-anim leaflet-grab leaflet-touch-drag" id="map_e96c5e676854427fb22f6eac94a20d0d" tabindex="0"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 16; transform: translate3d(-21px, -1149px, 0px) scale(4);"></div><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" role="presentation" src="./1381.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(327px, 123px, 0px); opacity: 1;"><img alt="" role="presentation" src="./1380.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(327px, -133px, 0px); opacity: 1;"><img alt="" role="presentation" src="./1381(1).jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(71px, 123px, 0px); opacity: 1;"><img alt="" role="presentation" src="./1381(2).jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(583px, 123px, 0px); opacity: 1;"><img alt="" role="presentation" src="./1382.jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(327px, 379px, 0px); opacity: 1;"><img alt="" role="presentation" src="./1380(1).jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(71px, -133px, 0px); opacity: 1;"><img alt="" role="presentation" src="./1380(2).jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(583px, -133px, 0px); opacity: 1;"><img alt="" role="presentation" src="./1382(1).jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(71px, 379px, 0px); opacity: 1;"><img alt="" role="presentation" src="./1382(2).jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(583px, 379px, 0px); opacity: 1;"><img alt="" role="presentation" src="./1381(3).jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-185px, 123px, 0px); opacity: 1;"><img alt="" role="presentation" src="./1381(4).jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(839px, 123px, 0px); opacity: 1;"><img alt="" role="presentation" src="./1380(3).jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-185px, -133px, 0px); opacity: 1;"><img alt="" role="presentation" src="./1380(4).jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(839px, -133px, 0px); opacity: 1;"><img alt="" role="presentation" src="./1382(3).jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-185px, 379px, 0px); opacity: 1;"><img alt="" role="presentation" src="./1382(4).jpg" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(839px, 379px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-shadow-pane"><img src="./marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(-19898px, -4737px, 0px);"><img src="./marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(5844px, 1657px, 0px);"><img src="./marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(5844px, 1657px, 0px);"></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-marker-pane"><img src="./marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(-19898px, -4737px, 0px); z-index: -4737;"><img src="./marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(5844px, 1657px, 0px); z-index: 1657;"><img src="./marker-icon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(5844px, 1657px, 0px); z-index: 1657;"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(544924px, 353703px, 0px) scale(2048);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="http://localhost:8888/notebooks/Documents/GitHub/Hessen-HeatMap/Untitled.ipynb?kernel_name=python3#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="http://localhost:8888/notebooks/Documents/GitHub/Hessen-HeatMap/Untitled.ipynb?kernel_name=python3#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com/" title="A JS library for interactive maps">Leaflet</a> | Map tiles by <a href="http://stamen.com/">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by © <a href="http://openstreetmap.org/">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.</div></div></div></div>
+        
+
+<script>    
+    
+            var map_e96c5e676854427fb22f6eac94a20d0d = L.map(
+                "map_e96c5e676854427fb22f6eac94a20d0d",
+                {
+                    center: [50.6069118, 9.0117446],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4d125b04989244b0b2da9c2f4733c75a = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e96c5e676854427fb22f6eac94a20d0d);
+        
+    
+            var marker_0fbc96d93c3f4ad7bf316756d2b8f1ff = L.marker(
+                [51.5079, 0.0877],
+                {}
+            ).addTo(map_e96c5e676854427fb22f6eac94a20d0d);
+        
+    
+        var popup_51341f34600740f19aeaa4d26e0b0749 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9681d45957c45eea43b728af256ffd0 = $(`<div id="html_e9681d45957c45eea43b728af256ffd0" style="width: 100.0%; height: 100.0%;">London Bridge</div>`)[0];
+            popup_51341f34600740f19aeaa4d26e0b0749.setContent(html_e9681d45957c45eea43b728af256ffd0);
+        
+
+        marker_0fbc96d93c3f4ad7bf316756d2b8f1ff.bindPopup(popup_51341f34600740f19aeaa4d26e0b0749)
+        ;
+
+        
+    
+    
+            var marker_10e3e1d8cbb346d5a697df9f0b261932 = L.marker(
+                [50.12102, 8.92553],
+                {}
+            ).addTo(map_e96c5e676854427fb22f6eac94a20d0d);
+        
+    
+        var popup_f37af1a3fb9949f786e8a4e08ee0dd79 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f295cc308979444eacf59b2db588e378 = $(`<div id="html_f295cc308979444eacf59b2db588e378" style="width: 100.0%; height: 100.0%;">McFit Hanau</div>`)[0];
+            popup_f37af1a3fb9949f786e8a4e08ee0dd79.setContent(html_f295cc308979444eacf59b2db588e378);
+        
+
+        marker_10e3e1d8cbb346d5a697df9f0b261932.bindPopup(popup_f37af1a3fb9949f786e8a4e08ee0dd79)
+        ;
+
+        
+    
+    
+            var marker_be787d87ccb8406488a723cd6d2cf4b4 = L.marker(
+                [50.12102, 8.92553],
+                {}
+            ).addTo(map_e96c5e676854427fb22f6eac94a20d0d);
+        
+    
+        var popup_3fb3cca57d9648a89aa25d9aa4991645 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0bc51f4379c940b786504b61cc3c3d9e = $(`<div id="html_0bc51f4379c940b786504b61cc3c3d9e" style="width: 100.0%; height: 100.0%;">McFit Hanau</div>`)[0];
+            popup_3fb3cca57d9648a89aa25d9aa4991645.setContent(html_0bc51f4379c940b786504b61cc3c3d9e);
+        
+
+        marker_be787d87ccb8406488a723cd6d2cf4b4.bindPopup(popup_3fb3cca57d9648a89aa25d9aa4991645)
+        ;
+
+        
+    
+</script></body></html>
